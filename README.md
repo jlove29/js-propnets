@@ -12,7 +12,7 @@ Necessary files
 There are four main components of the propnet implementation: the propnet and associated data structures, for building the propnet; methods for marking the propnet; methods for traversing the propnet; and the recreations of GGP functions that utilize the propnet. Currently, the implementation uses backwards propagation to read the propnet.
 
 `PropNet` data structure  
-Uses the grounded game description (global) and traverses it to construct a map from lines of GDL to associated `Propositions`, as well as some other maps and sets for convenience. Each `Proposition` is connected via a series of other `Components` (logic gates); all components of the propnet have an associated `value` (true/false), as well as sets of inputs and outputs (both containing other `Components`). Propositions can be one of five subclasses:
+Uses the grounded game description (global) and traverses it to construct a map from lines of GDL to associated `Propositions`, as well as some other maps and sets for convenience. Each `Proposition` is connected via a series of other `Components` (logic gates); all components of the propnet have an associated value (true/false), as well as sets of inputs and outputs (both containing other `Components`). Propositions can be one of five subclasses:
 - `InitProposition` (start with `value = true`)
 - `BaseProposition` (the values of which constitute a state)
 - `InputProposition` (which are adjusted based on each move)
