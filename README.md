@@ -1,5 +1,5 @@
 # js-propnets  
-propnets for ggp implemented in js
+[Propnets](http://ggp.stanford.edu/chapters/chapter_13.html) for General Game Playing implemented in JS
 
 JS propnets are build on top of the existing implementation of GDL grounding in JavaScript. The current grounding code cannot always complete in reasonable time, so some measures are included to run a player that utilizes the regular game description (they could be more robust). However, sometimes node’s space limits are tested by grounding - this is still a problem but can usually be avoided by manually overriding those limits with  
 `node --max-old-space-size=8192 with_propnets.js`
